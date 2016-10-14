@@ -1,0 +1,35 @@
+<div class="wrap" ng-controller="foodchange">
+    <header class="header_auto">
+        <a href="index.html"></a>
+        <h1>食物交换</h1>
+        <img src="../img/header.png">
+    </header>
+    <nav><p>请选择身体活动项目</p></nav>
+    <section>
+        <div class='main1'>
+            <div class='one' ng-click="choose()">
+                <dl>
+                    <dd>食材分类</dd>
+                </dl>
+                <p class="gushu">{{_tmp}}<a href=""></a></p>
+            </div>
+            <div class='one' ng-click="select()">
+                <dl>
+                    <dd>选择食材</dd>
+                </dl>
+                <p class="shicai">{{_tmp2}}<a href=""></a></p>
+            </div>
+            <div class='one'>
+                <dl>
+                    <dd>重量{{fcCount}}</dd>
+                </dl>
+                <p><input type="number" style="width: 80%;" ng-model="fcCount">g</p>
+            </div>
+        </div>
+        <div class="mask-layer"></div>
+    </section>
+    <p class="button" ng-click="showFChange()"><a href="javascript:;">换算</a></p>
+    <div ng-show="fcShow">
+        <div class="f-change">asdasd</div>
+    </div>
+</div>

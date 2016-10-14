@@ -1,0 +1,42 @@
+<div class="box1">
+        <header class="header_auto">
+            <a href="#"></a>
+            <h1>食物查询工具</h1>
+            <img src="../img/header.png">
+        </header>
+        <div class="b_main1" ng-controller="firstPage">
+            <div class="b_a b1" ui-sref="a1" ng-click="changeActive(1)" ng-class={"first-p-active":arr[0]}>
+                <dl>
+                    <dt><img src="../img/b_1.png" alt=""></dt>
+                    <dd>食物GI表</dd>
+                </dl>
+            </div>
+            <div class="b_b b2" ui-sref="foodchange" ng-click="changeActive(2)" ng-class={"first-p-active":arr[1]}>
+                <dl>
+                    <dt><img src="../img/b_2.png" alt=""></dt>
+                    <dd><a href="#">食物交换份</a></dd>
+                </dl>
+            </div>
+            <div class="b_a b3" ui-sref="foodlist" ng-click="changeActive(3)" ng-class={"first-p-active":arr[2]}>
+                <dl>
+                    <dt><img src="../img/b_3.png" alt=""></dt>
+                    <dd>食物成分表</dd>
+                </dl>
+            </div>
+            <div class="b_b b4" ui-sref="findex">
+                <dl>
+                    <dt><img src="../img/b_4.png" alt=""></dt>
+                    <dd><a href="#">常见活动能量消耗转换</a></dd>
+                </dl>
+            </div>
+            <div class="b_a b5">
+                <dl>
+                    <dt><img src="../img/b_5.png" alt=""></dt>
+                    <dd><a href="#">BMI测试</a></dd>
+                </dl>
+            </div>
+            <div class="b_b b6">
+
+            </div>
+        </div>
+    </div>

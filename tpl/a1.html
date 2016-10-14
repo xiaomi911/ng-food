@@ -1,0 +1,36 @@
+<div class="awrap" ng-controller="a1">
+
+    <div class="ui-view">
+        <header class="header_auto">
+            <a href="index.html"></a>
+            <h1>食物GI表</h1>
+            <img src="../img/header.png">
+        </header>
+        <section class="asection">
+            <div class="abox">
+                <p class="search" ui-sref="a1.a2"><input readonly type="text" placeholder="请输入需要查找的食材" id="ainput"></p>
+                <h5>注：GI值是指食物的血糖生成指数，是衡量食物摄入后引起血糖反应的指标</h5>
+                <ul>
+                    <li><span class="sp1"></span> 低</li>
+                    <li><span class="sp2"></span> 中</li>
+                    <li><span class="sp3"></span> 高</li>
+                </ul>
+            </div>
+            <div class="afood">
+                <div class="alei">
+                    <li><img src="../img/a2.png"><span>谷薯类</span></li>
+                    <li><img src="../img/a2.png"><span class="anone">谷薯类</span></li>
+                    <li><img src="../img/a2.png"><span>水果类</span></li>
+                    <li><img src="../img/a2.png"><span>肉蛋类</span></li>
+                    <li><img src="../img/a2.png"><span>大豆类</span></li>
+
+                </div>
+                <div class="afoods">
+                    <ul>
+                        <li ng-repeat="item in _data">{{item.name}}<span class="bg1">{{item.num}}</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
